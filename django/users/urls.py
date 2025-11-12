@@ -13,7 +13,4 @@ urlpatterns = [
     path('auth/login/', TokenObtainPairView.as_view()),
     path('auth/refresh/', TokenRefreshView.as_view()),
     path('', include(router.urls)),
-    # En Parte 2 y 3 añadiremos:
-    # path('api/', include('catalog.urls'))
-    # path('api/', include('invoices.urls'))
 ]
